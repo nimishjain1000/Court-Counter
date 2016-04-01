@@ -1,9 +1,11 @@
 package com.example.nimish.courtcounter;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
   int scoreTeamA=0;
@@ -14,7 +16,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void reset(View view)
-    { scoreTeamA=0;
+    { Context context = getApplicationContext();
+      char a;
+      if(scoreTeamA>scoreTeamB)
+      {
+        a='A';
+      }else a='B';
+      CharSequence text = "this game is won by "+a+" team .Let's play another game";
+      int duration = Toast.LENGTH_LONG;
+      Toast toast = Toast.makeText(context, text, duration);
+      toast.show();
+
+
+
+      scoreTeamA=0;
       scoreTeamB=0;
       displayForTeamA(scoreTeamA);
       displayForTeamB(scoreTeamB);
