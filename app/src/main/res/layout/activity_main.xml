@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="32dp"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nimish.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="128dp"
+        android:layout_height="256dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEAM A"
+            android:textAllCaps="true"
+            android:textColor="#FF0079FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/team_a_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textColor="#FF0079FF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/team_a_plus2"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="#FF0079FF"
+            android:onClick="inc2"
+            android:shadowColor="@color/colorAccent"
+            android:text="+2 points" />
+
+        <Button
+            android:id="@+id/team_a_plus3"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="#FF0079FF"
+            android:onClick="inc3"
+            android:shadowColor="@color/colorAccent"
+            android:text="+3 points" />
+
+        <Button
+            android:id="@+id/team_a_free"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="#FF0079FF"
+            android:onClick="free"
+            android:shadowColor="@color/colorAccent"
+            android:text="Free Throw" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_all"
+        android:layout_width="67dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:background="#FF0079FF"
+        android:onClick="reset"
+        android:text="Reset" />
+<!--<View-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#000"/>-->
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="256dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEAM B"
+            android:textAllCaps="true"
+            android:textColor="#FF0079FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/team_b_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textColor="#FF0079FF"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/team_b_plus2"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="#FF0079FF"
+            android:elevation="30dp"
+            android:onClick="inc2"
+            android:shadowColor="@color/colorAccent"
+            android:text="+2 points"
+
+            />
+
+        <Button
+            android:id="@+id/team_b_plus3"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="#FF0079FF"
+            android:onClick="inc3"
+            android:text="+3 points" />
+
+        <Button
+            android:id="@+id/team_b_free"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="#FF0079FF"
+            android:onClick="free"
+            android:text="Free Throw" />
+    </LinearLayout>
+</LinearLayout>
